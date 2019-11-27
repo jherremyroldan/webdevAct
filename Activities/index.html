@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--Font Awesome CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize_lib/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Festival Filipinas</title>
+
+    <style>
+        header{
+            background-image: url('/image/home_featured_0.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 650px;
+        }
+        @media screen and (max-width:670px){
+            header{
+                min-height: 300px;
+            }
+        }
+
+        input{
+            color: #ffffff;
+        }
+        .input-field .prefix.active{
+            color: #ff5722;
+        }
+        input[type=email]:not(.browser-default):focus:not([readonly]){
+            border-bottom: 1px solid #ff5722;
+            box-shadow: 0 1px 0 0  #ff5722;
+        }
+        input[type=email]:not(.browser-default):focus:not([readonly])+label{
+            color: #ff5722;
+        }
+
+        input[type=text]:not(.browser-default):focus:not([readonly]){
+            border-bottom: 1px solid #ff5722;
+            box-shadow: 0 1px 0 0  #ff5722;
+        }
+        input[type=text]:not(.browser-default):focus:not([readonly])+label{
+            color: #ff5722;
+        }
+        
+
+
+        textarea{
+            color: #ffffff;
+        }
+        textarea.materialize-textarea:focus:not([readonly])+label{
+            color: #ff5722;
+        }
+        textarea.materialize-textarea:focus:not([readonly]){
+            border-bottom: 1px solid #ff5722;
+            box-shadow: 0 1px 0 0  #ff5722;
+        }
+
+        .datepicker-date-display {
+            background-color: #212121;
+        }
+        .datepicker-date-display .date-text{
+            color: #ff5722;
+        }
+        .datepicker-date-display .year-text{
+            color: #ff5722;
+        }
+        .datepicker-table td.is-today {
+            color: #ff5722;
+        }
+        .datepicker-table td.is-selected {
+            background-color:  #ff5722;
+            color: #000000;
+        }
+        .datepicker-cancel, .datepicker-done {
+            color: #ff5722;
+        }
+
+
+        input[type="checkbox"]:checked+span:not(.lever):before {
+        border-right: 2px solid #ff5722;
+        border-bottom: 2px solid #ff5722;
+        }
+
+    </style>
+</head>
+<body class="grey darken-4">
+    <!-- navbar -->
+    <header>
+        <!--img src="image/home_featured_2.jpg"-->
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#"class="brand-logo"><span>Festival Filipinas</span></a>
+                <a href="" class="sidenav-trigger" data-target="mobile_menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#islands">Islands</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Instagram">
+                        <i class="fab fa fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a></li>
+                    <li><a href="#"class=" tooltipped btn-floating btn-small grey darken-4" data-tooltip="Twittter">
+                        <i class="fa fa-twitter"></i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav blue-grey lighten-3" id="mobile_menu">
+                        <li><a href="#">Islands</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- photo / grid -->
+    <section class="section container scrollspy" id="islands">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="image/featured_festival_1_luzon.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="amber-text text-darken-1">Luzon</h2>
+                <p class="amber-text text-darken-3">The economic and political center of the nation. While the country is
+                    busy on it's progress, there is still a lot of reason to celebrate.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="image/featured_festival_2_visayas.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 offset-l1 right-align">
+                <h2 class="amber-text text-darken-1">Visayas</h2>
+                <p class="amber-text text-darken-3">Separated by waters but united by strong cultural heritage. A place of diverse
+                    natural resources, people, and history.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="image/featured_festival_3_mindanao.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="amber-text text-darken-1">Mindanao</h2>
+                <p class="amber-text text-darken-3">The Land of Promise. The country's last-stand of ancient culture as the
+                    people continuously cherish and enrich it's cultural aspect.</p>
+            </div>
+        </div>
+    </section>
+    <!-- parallax -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="image/parallax_image_1.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+    <!-- services / tabs -->
+        <section class="container section scrollspy amber-text text-darken-1" id="about">
+            <div class="row">
+                <div class="col s12 l4 ">
+                    <h3 class="">You will see...</h3>
+                    <p>The fun and rich history of different Festivals held in each Islands of Philippines</p>
+                    <p>By the way, I am currently honing my skills in Web Development and combining it with my passion in History</p>                    
+                </div>
+                <div class="col s12 l6 offset-l2">
+                    <ul class="tabs grey darken-4">
+                        <li class="tab col s6"><a href="#gallery" class="amber-text text-darken-1">Gallery</a></li>
+                        <li class="tab col s6"><a href="#history" class="amber-text text-darken-1">History</a></li>
+                    </ul>
+                    <div class="col s12" id="gallery">
+                        <p class="flow-text">GALLERY</p>
+                        <p >Click some of the Major Islands Above to view which Festival is being held right now.</p>
+                    </div>
+                    <div class="col s12" id="history">
+                        <p class="flow-text">HISTORY</p>
+                        <p>Want to learn more about each Festival? This article also feature fun facts and 
+                            trivias about the festivities. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    <!-- parallax -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="image/parallax_image_2.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+    <!-- contact form-->
+        <section class="container section scrollspy" id="contact">
+            <div class="row">
+                <div class="col s12 l5 amber-text text-darken-1">
+                    <h2>Get In Touch</h2>
+                    <p>Do you have any questions? Inquiries? How about suggestions?</p>
+                    <p>Let's make this article fun to read and informative!</p>
+                    <p>I'm really happy to know your thoughts and work together with you.</p>
+                </div>
+                <div class="col s12 l5 offset-l2">
+                    <div class="form">
+                        <div class="input-field amber-text text-darken-1">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email" autocomplete="off">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field amber-text text-darken-1">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons amber-text text-darken-1 prefix ">date_range</i>
+                            <input type="text" id="date" class="datepicker">
+                            <label for="date">Schedule</label>
+                        </div>
+                        <div class="input-field">
+                            <p class="amber-text text-darken-1">
+                                Let me know your favorite among the Philippine Islands:
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Luzon</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Visayas</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Mindanao</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn amber waves-effect waves-light black-text text-darken-1">Submit<i class="material-icons right">send</i></button
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- footer -->
+        <footer class="black  blue-grey-text text-lighten-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h5>About Me</h5>
+                        <p>Jherremy Ivan M. Roldan, Civil Service Professional</p> 
+                        <p>Web Development Level III</p>
+                    </div>
+                    <col class="col s12 l4 offset-l2">
+                        <h5>Connect</h5>
+                        <ul>
+                            <li><a href="#" class="blue-grey-text text-lighten-5">Facebook</a></li>
+                            <li><a href="#" class="blue-grey-text text-lighten-5">Instagram</a></li>
+                            <li><a href="#" class="blue-grey-text text-lighten-5">LinkedIn</a></li>
+                            <li><a href="#" class="blue-grey-text text-lighten-5">Gmail</a></li>
+                            <li><a href="#" class="blue-grey-text text-lighten-5">Hotmail</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="footer-copyright blue-grey black-text text-lighten-5">
+                <div class="container center-align">&copy 2019 Festival Filipinas</div>
+            </div>
+        </footer>
+
+
+
+
+    <!-- Jquery CDN-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize_lib/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 0
+            });
+        });
+    </script>
+
+</body>
+</html>
